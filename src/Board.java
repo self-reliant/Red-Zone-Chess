@@ -198,7 +198,7 @@ public class Board {
         if (newBoard.isChecked(piece.getColor())) {
             return Verdict.ILLEGAL_MOVE;
         }
-       this.points = newBoard.points;
+        this.points = newBoard.points;
         turn = switchColor(turn);
         return Verdict.SUCCESSFUL_MOVE;
     }
